@@ -5,24 +5,16 @@ import numpy as np
 pickle_in = open('model.pkl', 'rb') 
 classifier = pickle.load(pickle_in)
 
-@st.cache(allow_output_mutation=True)
+# @st.cache(allow_output_mutation=True)
 
-# defining the function which will make the prediction using the data which the user inputs 
 # '2001_IV', '2001_NRMVotes', '2001_OV', '2006_IV', '2006_NRMVotes', '2011_IV', '2016_NRMVOTES', '2016_NRM_Score', '2016_Opp_Votes'
 def prediction(IV_2001, NRMVotes_2001, OV_2001, IV_2006, NRMVotes_2006 ,IV_2011, NRMVotes_2016, NRM_Score_2016, Opp_Votes_2016):
     
-    # preprocess user input
-#     if Gender == 'Male':
-#         Gender = 0
-#     else:
-#         Gender = 1
-        
-    # making predictions of all the grouphs in the file
+    
     predictions = classifier.predict(
         [[IV_2001, NRMVotes_2001, OV_2001, IV_2006, NRMVotes_2006 ,IV_2011, NRMVotes_2016, NRM_Score_2016, Opp_Votes_2016]])
     
-#     class_names = ['Converted','Demented','Nondemented']
-#     final_pred = class_names[np.argmax(predictions)] 
+
     print(predictions)
          
     return predictions
@@ -36,7 +28,7 @@ def main():
     # the text to be displayed  
     html_temp = """  
     <div style = "background-colour: #FFFF00; padding: 16px">  
-    <h1 style = "color: #000000; text-align: centre; "> Streamlit Iris Flower Classifier ML App   
+    <h1 style = "color: #000000; text-align: centre; "> NRM Presidential score per District   
      </h1>  
     </div>  
     """  
