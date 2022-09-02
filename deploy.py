@@ -41,7 +41,7 @@ def prediction(IV_2001, NRMVotes_2001, OV_2001, IV_2006, NRMVotes_2006 ,IV_2011,
 # main function defines our webpage
 def main():
       # Now, we will give the title to out web page  
-    smt.title("NRM President Score per District")  
+    st.title("NRM President Score per District")  
         
     # Now, we will be defining some of the frontend elements of our web           
     # page like the colour of background and fonts and font    size, the padding and    
