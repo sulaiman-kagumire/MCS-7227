@@ -40,12 +40,12 @@ def prediction(IV_2001, NRMVotes_2001, OV_2001, IV_2006, NRMVotes_2006 ,IV_2011,
     return predictions
 # main function defines our webpage
 def main():
-     html_temp = """  
+    html_temp = """  
     <div style = "background-colour: black; padding: 16px">  
     <h1 style = "color: Yellow; text-align: centre; "> NRM Presidential Score Predictor App   
      </h1>  
     </div>  
-    """  
+    """ 
     # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
     
