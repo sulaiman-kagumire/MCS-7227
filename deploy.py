@@ -1,9 +1,9 @@
-import pickle
+import pickle as pkl
 import streamlit as st
 import numpy as np
 
 pickle_in = open('model.pkl', 'rb') 
-classifier = pickle.load(pickle_in)
+classifier = pkl.load(pickle_in)
 
 # @st.cache(allow_output_mutation=True)
 
