@@ -52,14 +52,14 @@ def main():
     # allow user input 
 #         2001_IV = st.selectbox('Gender',('Male','Female'))
     IV_2001  = st.slider('IV 2001',min_value=1, max_value=1000000, value=1, step=1)  
-    NRMVotes_2001  = st.slider('Age',min_value=1, max_value=1000000, value=10, step=1)  
-    OV_2001  = st.slider('Age',min_value=1, max_value=100, value=1000000, step=1)
-    IV_2006 = st.slider('Age',min_value=1, max_value=100, value=1000000, step=1)
-    NRMVotes_2006 = st.slider('Age',min_value=1, max_value=1000000, value=10, step=1)
-    IV_2011 = st.slider('Age',min_value=1, max_value=100, value=1000000, step=1)
-    NRMVotes_2016 = st.slider('Age',min_value=1, max_value=1000000, value=10, step=1) 
-    NRM_Score_2016  =st.slider('Age',min_value=0.0, max_value=1.0, value=0.01, step=0.01)
-    Opp_Votes_2016  = st.slider('Age',min_value=1, max_value=1000000, value=10, step=1)
+    NRMVotes_2001  = st.slider(' NRMVotes_2001',min_value=1, max_value=1000000, value=10, step=1)  
+    OV_2001  = st.slider('OV_2001',min_value=1, max_value=100, value=1000000, step=1)
+    IV_2006 = st.slider('IV_2006',min_value=1, max_value=100, value=1000000, step=1)
+    NRMVotes_2006 = st.slider('NRMVotes_2006',min_value=1, max_value=1000000, value=10, step=1)
+    IV_2011 = st.slider('IV_2011',min_value=1, max_value=100, value=1000000, step=1)
+    NRMVotes_2016 = st.slider('NRMVotes_2016',min_value=1, max_value=1000000, value=10, step=1) 
+    NRM_Score_2016  =st.slider('NRM_Score_2016',min_value=0.0, max_value=1.0, value=0.01, step=0.01)
+    Opp_Votes_2016  = st.slider('Opp_Votes_2016',min_value=1, max_value=1000000, value=10, step=1)
     
     # Make the prediction and store it when clicked
     if st.button("Predict"):
