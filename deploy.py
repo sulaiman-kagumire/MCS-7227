@@ -51,15 +51,15 @@ def main():
     
     # allow user input 
 #         2001_IV = st.selectbox('Gender',('Male','Female'))
-    IV_2001  = st.text_input('2001 Invalid Votes', " Type Here")
-    NRMVotes_2001  = st.text_input('2001 NRM Votes', " Type Here")
-    OV_2001  = st.text_input('2001 Opposition Votes', " Type Here")
-    IV_2006 = st.text_input('2006 Invalid Votes', " Type Here")
-    NRMVotes_2006 = st.text_input('2006 NRM Votes', " Type Here")
-    IV_2011 = st.text_input('2011 Invalid Votes', " Type Here")
-    NRMVotes_2016 = st.text_input('2016 NRM Votes', " Type Here")
-    NRM_Score_2016  = st.text_input('2016 NRM Score', " Type Here")
-    Opp_Votes_2016  = st.text_input('2016 Opp Votes', " Type Here")
+    IV_2001  = st.text_input('2001 Invalid Votes' , min_value=1, max_value=100000000, value=10, step=1)
+    NRMVotes_2001  = st.text_input('2001 NRM Votes', min_value=1, max_value=10000000, value=10, step=1)
+    OV_2001  = st.text_input('2001 Opposition Votes' ,min_value=1, max_value=10000000, value=10, step=1)
+    IV_2006 = st.text_input('2006 Invalid Votes' ,min_value=1, max_value=10000000, value=10, step=1)
+    NRMVotes_2006 = st.text_input('2006 NRM Votes' ,min_value=1, max_value=10000000, value=10, step=1)
+    IV_2011 = st.text_input('2011 Invalid Votes' ,min_value=1, max_value=10000000, value=10, step=1)
+    NRMVotes_2016 = st.text_input('2016 NRM Votes' ,min_value=1, max_value=10000000, value=10, step=1)
+    NRM_Score_2016  = st.text_input('2016 NRM Score' ,min_value=1, max_value=10000000, value=10, step=1)
+    Opp_Votes_2016  = st.text_input('2016 Opp Votes',min_value=1, max_value=10000000, value=10, step=1)
     
     # Make the prediction and store it when clicked
     if st.button("Predict"):
