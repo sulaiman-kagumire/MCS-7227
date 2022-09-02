@@ -1,7 +1,3 @@
-!pip install -U scikit-learn
-!pip install matplotlib
-!pip install seaborn
-
 import numpy as np
 import pandas as pd
 # import seaborn as sns
