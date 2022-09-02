@@ -44,7 +44,7 @@ def main():
     <div style ="background-color:red;background-image: linear-gradient(45deg, #f3ec78, #af4261);background-size: 100%;  background-repeat: repeat;;
     -webkit-background-clip: text;-webkit-text-fill-color: transparent; -moz-background-clip: text;
     -moz-text-fill-color: transparent;"> 
-    <h1 style ="text-align: center;font-family: "Archivo Black", sans-serif;font-weight: normal;font-size: 6em; ">NRM Presidential Score per District</h1> 
+    <h1 style ="text-align: center;font-family: "Yellow", sans-serif;font-weight: normal;font-size: 6em; ">NRM Presidential Score per District</h1> 
     </div> """
     # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
