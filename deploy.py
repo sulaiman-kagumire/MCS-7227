@@ -1,3 +1,26 @@
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+from sklearn.preprocessing import StandardScaler, Normalizer
+from sklearn.decomposition import PCA
+from sklearn.model_selection import train_test_split, StratifiedShuffleSplit, cross_val_score, cross_val_predict, ShuffleSplit
+
+from sklearn.svm import LinearSVR, NuSVR, SVR
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.pipeline import make_pipeline
+from sklearn.multioutput import MultiOutputRegressor
+from sklearn.ensemble import RandomForestRegressor, ExtraTreesRegressor, GradientBoostingRegressor, BaggingRegressor
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import VotingRegressor, StackingRegressor, HistGradientBoostingRegressor
+from sklearn.linear_model import LinearRegression, HuberRegressor
+
+from xgboost import XGBRFRegressor, XGBRegressor
+from catboost import CatBoostRegressor
+from lightgbm import LGBMRegressor
+
+from sklearn.metrics import mean_squared_error, accuracy_score, mean_absolute_error, mean_squared_log_error
 import pickle as pkl
 import streamlit as st
 import numpy as np
