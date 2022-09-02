@@ -58,7 +58,7 @@ def main():
     NRMVotes_2006 = st.slider('2006 NRM Votes' ,min_value=1, max_value=1000000, value=10, step=1)
     IV_2011 = st.slider('2011 Invalid Votes' ,min_value=1, max_value=1000000, value=10, step=1)
     NRMVotes_2016 = st.slider('2016 NRM Votes' ,min_value=1, max_value=1000000, value=10, step=1)
-    NRM_Score_2016  = st.slider('2016 NRM Score' ,min_value=1, max_value=1000000, value=10, step=1)
+    NRM_Score_2016  = st.slider('2016 NRM Score' ,min_value=0, max_value=1, value=0, step=0.1)
     Opp_Votes_2016  = st.slider('2016 Opp Votes',min_value=1, max_value=1000000, value=10, step=1)
     
     # Make the prediction and store it when clicked
