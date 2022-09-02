@@ -51,15 +51,15 @@ def main():
     
     # allow user input 
 #         2001_IV = st.selectbox('Gender',('Male','Female'))
-    IV_2001  = st.text_input ("IV ", " Type Here")  
-    NRMVotes_2001  = st.text_input ("Sepal Length ", " Type Here")  
-    OV_2001  = st.text_input ("Sepal Length ", " Type Here")  
-    IV_2006 = st.text_input ("Sepal Length ", " Type Here")  
-    NRMVotes_2006 = st.text_input ("Sepal Length ", " Type Here")  
-    IV_2011 = st.text_input ("Sepal Length ", " Type Here")  
-    NRMVotes_2016 = st.text_input ("Sepal Length ", " Type Here")  
-    NRM_Score_2016  =st.text_input ("Sepal Length ", " Type Here")  
-    Opp_Votes_2016  = st.text_input ("Sepal Length ", " Type Here")  
+    IV_2001  = st.text_input ("200 IV ", " Type Here")  
+    NRMVotes_2001  = st.text_input ("2001 NRMV", " Type Here")  
+    OV_2001  = st.text_input ("2001 OV", " Type Here")  
+    IV_2006 = st.text_input ("2006 IV", " Type Here")  
+    NRMVotes_2006 = st.text_input ("2006 NRMV", " Type Here")  
+    IV_2011 = st.text_input ("2011 IV", " Type Here")  
+    NRMVotes_2016 = st.text_input ("2006 NRMV", " Type Here")  
+    NRM_Score_2016  =st.text_input ("2016 NRM SCORE", " Type Here")  
+    Opp_Votes_2016  = st.text_input ("2016 OPPV", " Type Here")  
     
     # Make the prediction and store it when clicked
     if st.button("Predict"):
