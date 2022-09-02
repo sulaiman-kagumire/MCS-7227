@@ -51,15 +51,15 @@ def main():
     
     # allow user input 
 #         2001_IV = st.selectbox('Gender',('Male','Female'))
-    IV_2001  = st.slider('2001 Invalid Votes' , min_value=1, max_value=10000000, value=10, step=1)
-    NRMVotes_2001  = st.slider('2001 NRM Votes', min_value=1, max_value=1000000, value=10, step=1)
-    OV_2001  = st.slider('2001 Opposition Votes' ,min_value=1, max_value=1000000, value=10, step=1)
-    IV_2006 = st.slider('2006 Invalid Votes' ,min_value=1, max_value=1000000, value=10, step=1)
-    NRMVotes_2006 = st.slider('2006 NRM Votes' ,min_value=1, max_value=1000000, value=10, step=1)
-    IV_2011 = st.slider('2011 Invalid Votes' ,min_value=1, max_value=1000000, value=10, step=1)
-    NRMVotes_2016 = st.slider('2016 NRM Votes' ,min_value=1, max_value=1000000, value=10, step=1)
-    NRM_Score_2016  = st.slider('2016 NRM Score' ,min_value=0.0, max_value=1.0, value=0.1, step=0.001)
-    Opp_Votes_2016  = st.slider('2016 Opp Votes',min_value=1, max_value=1000000, value=10, step=1)
+    IV_2001  = st.number_input('Insert HERE')
+    NRMVotes_2001  = st.number_input('Insert HERE')
+    OV_2001  = st.number_input('Insert HERE')
+    IV_2006 = st.number_input('Insert HERE')
+    NRMVotes_2006 = st.number_input('Insert HERE')
+    IV_2011 = st.number_input('Insert HERE')
+    NRMVotes_2016 = st.number_input('Insert HERE')
+    NRM_Score_2016  =st.number_input('Insert HERE')
+    Opp_Votes_2016  = st.number_input('Insert HERE')
     
     # Make the prediction and store it when clicked
     if st.button("Predict"):
