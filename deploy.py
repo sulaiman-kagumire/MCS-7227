@@ -9,7 +9,7 @@ classifier = pickle.load(pickle_in)
 
 # defining the function which will make the prediction using the data which the user inputs 
 # '2001_IV', '2001_NRMVotes', '2001_OV', '2006_IV', '2006_NRMVotes', '2011_IV', '2016_NRMVOTES', '2016_NRM_Score', '2016_Opp_Votes'
-def prediction(2001_IV, 2001_NRMVotes, 2001_OV, 2006_IV, 2006_NRMVotes ,2011_IV, 2016_NRMVotes, 2016_NRM_Score, 2016_Opp_Votes):
+def prediction(IV_2001, NRMVotes_2001, OV_2001, IV_2006, NRMVotes_2006 ,IV_2011, NRMVotes_2016, NRM_Score_2016, Opp_Votes_2016):
     
     # preprocess user input
 #     if Gender == 'Male':
