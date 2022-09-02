@@ -51,7 +51,7 @@ def main():
     
     # allow user input 
 #         2001_IV = st.selectbox('Gender',('Male','Female'))
-    IV_2001  = st.slider('IV 2001',min_value=1, max_value=1000000, value=1, step=1)  
+    IV_2001  = st.slider('IV 2001',min_value=1, max_value=100000, value=1, step=1)  
     NRMVotes_2001  = st.slider(' NRMVotes_2001',min_value=1, max_value=1000000, value=1, step=1)  
     OV_2001  = st.slider('OV_2001',min_value=1, max_value=100, value=1000000, step=1)
     IV_2006 = st.slider('IV_2006',min_value=1, max_value=100, value=1000000, step=1)
