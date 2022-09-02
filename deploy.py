@@ -40,7 +40,7 @@ def prediction(IV_2001, NRMVotes_2001, OV_2001, IV_2006, NRMVotes_2006 ,IV_2011,
     return predictions
 # main function defines our webpage
 def main():
- html_temp ="""
+    html_temp ="""
     <div style ="background-color:red;background-image: linear-gradient(45deg, #f3ec78, #af4261);background-size: 100%;  background-repeat: repeat;;
     -webkit-background-clip: text;-webkit-text-fill-color: transparent; -moz-background-clip: text;
     -moz-text-fill-color: transparent;"> 
@@ -50,7 +50,7 @@ def main():
     st.markdown(html_temp, unsafe_allow_html = True) 
     
     # allow user input 
-#     2001_IV = st.selectbox('Gender',('Male','Female'))
+#         2001_IV = st.selectbox('Gender',('Male','Female'))
     IV_2001  = st.text_input('2001 Invalid Votes', " Type Here")
     NRMVotes_2001  = st.text_input('2001 NRM Votes', " Type Here")
     OV_2001  = st.text_input('2001 Opposition Votes', " Type Here")
