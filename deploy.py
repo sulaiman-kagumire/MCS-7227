@@ -41,7 +41,7 @@ def prediction(IV_2001, NRMVotes_2001, OV_2001, IV_2006, NRMVotes_2006 ,IV_2011,
 # main function defines our webpage
 def main():
     html_temp = """  
-    <div style = "background-colour: black; padding: 16px">  
+    <div style = "background-colour: Red; padding: 16px">  
     <h1 style = "color: Yellow; text-align: centre; "> NRM Presidential Score Predictor App   
      </h1>  
     </div>  
