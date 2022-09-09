@@ -8,6 +8,8 @@ from sklearn.decomposition import PCA
 from sklearn.model_selection import train_test_split, StratifiedShuffleSplit, cross_val_score, cross_val_predict, ShuffleSplit
 
 from sklearn.svm import LinearSVR, NuSVR, SVR
+
+import pickle
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.pipeline import make_pipeline
 from sklearn.multioutput import MultiOutputRegressor
@@ -21,6 +23,55 @@ from sklearn.metrics import mean_squared_error, accuracy_score, mean_absolute_er
 import pickle as pkl
 import streamlit as st
 import numpy as np
+
+df3 = pd.read_csv('df3.csv')
+
+y2 = df3['2021_NRM_Score']
+X = df3.drop('2021_NRM_Score', axis=1)
+
+x_scaled = StandardScaler().fit_transform(X)
+pca = PCA(n_components=7)
+x_pca = pca.fit_transform(x_scaled)
+
+xtrain, xtest, ytrain, ytest = train_test_split(x_pca, y2, test_size=0.2, random_state=42)
+
+# xgr = XGBRegressor()
+# # cbr = CatBoostRegressor()
+# lgr = LGBMRegressor()
+
+# rf = RandomForestRegressor()
+gbr = GradientBoostingRegressor()
+# exr  = ExtraTreesRegressor()
+# dt = DecisionTreeRegressor()
+# lsvr = LinearSVR()
+# nsvr = NuSVR()
+# svr = SVR()
+# knr = KNeighborsRegressor()
+
+# xgr = xgr.fit(xtrain, ytrain)
+# # cbr.fit(xtrain, ytrain)
+# lgr = lgr.fit(xtrain, ytrain)
+# rf = rf.fit(xtrain, ytrain)
+gbr = gbr.fit(xtrain, ytrain)
+# exr = exr.fit(xtrain, ytrain)
+# dt = dt.fit(xtrain, ytrain)
+# lsvr.fit(xtrain, ytrain)
+# nsvr = nsvr.fit(xtrain, ytrain)
+# svr = svr.fit(xtrain, ytrain)
+# knr = knr.fit(xtrain, ytrain)
+
+# print(xgr.score(xtrain, ytrain))
+# # print(cbr.score(xtrain, ytrain))
+# print(lgr.score(xtrain, ytrain))
+# print(rf.score(xtrain, ytrain))
+# print(gbr.score(xtrain, ytrain))
+# print(exr.score(xtrain, ytrain))
+# print(dt.score(xtrain, ytrain))
+# print(lsvr.score(xtrain, ytrain))
+# print(nsvr.score(xtrain, ytrain))
+# print(svr.score(xtrain, ytrain))
+# print(knr.score(xtrain, ytrain))
+pickle.dump(gbr, open('model.pkl', 'wb'))
 
 pickle_in = open('model.pkl', 'rb') 
 classifier = pkl.load(pickle_in)
