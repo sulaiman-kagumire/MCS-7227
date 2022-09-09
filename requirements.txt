@@ -2,4 +2,5 @@ sklearn
 seaborn
 matplotlib
 numpy
-pandas
+pandas 
+pickle
