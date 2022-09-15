@@ -118,7 +118,7 @@ def main():
     
     # Make the prediction and store it when clicked
     if st.button("Predict"):
-        result = prediction(IV_2011, NRM_Score_2011, NRMVotes_2016, OppVotes_2016)
+        result = prediction(IV_2011, NRM_Score_2011, NRMVotes_2016, Opp_Votes_2016)
         st.success(f'2021 NRM Score for this District is: {list(result)}')
         
 if __name__=='__main__': 
