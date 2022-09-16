@@ -95,8 +95,9 @@ def prediction(IV_2011, NRM_Score_2011, NRMVotes_2016, OppVotes_2016):
 def main():
     html_temp = """  
     <div style = "background-colour: Black; padding: 16px">  
-    <h1 style = "color: Red; text-align: centre; "> NRM Presidential Score Predictor App   
+    <h1 style = "color: Red; text-align: centre; "> NRM Presidential Score Predictor   
      </h1>  
+     <p> Use the slider to set values </p>
     </div>  
     """ 
     # display the front end aspect
@@ -109,10 +110,10 @@ def main():
 #     OV_2001  = st.slider('OV_2001',min_value=1, max_value=100, value=1000000, step=1)
 #     IV_2006 = st.slider('IV_2006',min_value=1, max_value=100, value=1000000, step=1)
 #     NRMVotes_2006 = st.slider('NRMVotes_2006',min_value=1, max_value=1000000, value=1, step=1)
-    IV_2011 = st.slider('IV_2011',min_value=1, max_value=100, value=1000000, step=1)
-    NRM_Score_2011  =st.slider('NRM_Score_2011',min_value=0.0, max_value=1.0, value=0.01, step=0.01)
-    NRMVotes_2016 = st.slider('NRMVotes_2016',min_value=1, max_value=1000000, value=1, step=1) 
-    OppVotes_2016  = st.slider('Opp_Votes_2016',min_value=1, max_value=1000000, value=1, step=1)
+    IV_2011 = st.slider('2011 Invalid Votes',min_value=1, max_value=100, value=1000000, step=1)
+    NRM_Score_2011  =st.slider('2011 NRM Score',min_value=0.0, max_value=1.0, value=0.01, step=0.01)
+    NRMVotes_2016 = st.slider('2016 NRM Votes',min_value=1, max_value=1000000, value=1, step=1) 
+    OppVotes_2016  = st.slider('2016 Opposition Votes',min_value=1, max_value=1000000, value=1, step=1)
     
 #     IV_2011, NRM_Score_2011, NRMVotes_2016, OppVotes_2016
     
