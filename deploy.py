@@ -98,6 +98,7 @@ def main():
     <h1 style = "color: Red; text-align: centre; "> NRM Presidential Score Predictor   
      </h1>  
      <p> Help: Use the slider to set values </p>
+     <p> Help: Click the "Predict" button to view NRM predicted score in that particular district </p>
     </div>  
     """ 
     # display the front end aspect
