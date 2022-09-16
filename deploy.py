@@ -97,7 +97,7 @@ def main():
     <div style = "background-colour: Black; padding: 16px">  
     <h1 style = "color: Red; text-align: centre; "> NRM Presidential Score Predictor   
      </h1>  
-     <p> Use the slider to set values </p>
+     <p> Help: Use the slider to set values </p>
     </div>  
     """ 
     # display the front end aspect
