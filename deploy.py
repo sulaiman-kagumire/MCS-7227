@@ -75,7 +75,7 @@ gbr = gbr.fit(xtrain, ytrain)
 # pickle.dump(gbr, open('model.pkl', 'wb'))
 pickle.dump(gbr, open('presidential_model.pkl', 'wb'))
 
-pickle_in = open('presidential_model (1).pkl', 'rb') 
+pickle_in = open('presidential_model.pkl', 'rb') 
 classifier = pkl.load(pickle_in)
 
 # @st.cache(allow_output_mutation=True)
