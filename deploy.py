@@ -42,17 +42,7 @@ xtrain, xtest, ytrain, ytest = train_test_split(x_scaled, y2, test_size=0.2, ran
 
 # rf = RandomForestRegressor()
 gbr = GradientBoostingRegressor()
-# exr  = ExtraTreesRegressor()
-# dt = DecisionTreeRegressor()
-# lsvr = LinearSVR()
-# nsvr = NuSVR()
-# svr = SVR()
-# knr = KNeighborsRegressor()
 
-# xgr = xgr.fit(xtrain, ytrain)
-# # cbr.fit(xtrain, ytrain)
-# lgr = lgr.fit(xtrain, ytrain)
-# rf = rf.fit(xtrain, ytrain)
 gbr = gbr.fit(xtrain, ytrain)
 # exr = exr.fit(xtrain, ytrain)
 # dt = dt.fit(xtrain, ytrain)
