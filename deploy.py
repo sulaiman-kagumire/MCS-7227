@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler, Normalizer
 from sklearn.decomposition import PCA
 from sklearn.model_selection import train_test_split, StratifiedShuffleSplit, cross_val_score, cross_val_predict, ShuffleSplit
 
-from sklearn.svm import LinearSVR, NuSVR, SVR
+# from sklearn.svm import LinearSVR, NuSVR, SVR
 
 import pickle
 from sklearn.neighbors import KNeighborsRegressor
