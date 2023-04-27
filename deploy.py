@@ -44,25 +44,7 @@ xtrain, xtest, ytrain, ytest = train_test_split(x_scaled, y2, test_size=0.2, ran
 gbr = GradientBoostingRegressor()
 
 gbr = gbr.fit(xtrain, ytrain)
-# exr = exr.fit(xtrain, ytrain)
-# dt = dt.fit(xtrain, ytrain)
-# lsvr.fit(xtrain, ytrain)
-# nsvr = nsvr.fit(xtrain, ytrain)
-# svr = svr.fit(xtrain, ytrain)
-# knr = knr.fit(xtrain, ytrain)
 
-# print(xgr.score(xtrain, ytrain))
-# # print(cbr.score(xtrain, ytrain))
-# print(lgr.score(xtrain, ytrain))
-# print(rf.score(xtrain, ytrain))
-# print(gbr.score(xtrain, ytrain))
-# print(exr.score(xtrain, ytrain))
-# print(dt.score(xtrain, ytrain))
-# print(lsvr.score(xtrain, ytrain))
-# print(nsvr.score(xtrain, ytrain))
-# print(svr.score(xtrain, ytrain))
-# print(knr.score(xtrain, ytrain))
-# pickle.dump(gbr, open('model.pkl', 'wb'))
 pickle.dump(gbr, open('presidential_model.pkl', 'wb'))
 
 pickle_in = open('presidential_model.pkl', 'rb') 
@@ -91,16 +73,8 @@ def main():
      <p> Help: Click the "Predict" button to view NRM predicted score in that particular district </p>
     </div>  
     """ 
-    # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
     
-    # allow user input 
-#         2001_IV = st.selectbox('Gender',('Male','Female'))
-#     IV_2001  = st.slider('IV 2001',min_value=1, max_value=100000, value=1, step=1)  
-#     NRMVotes_2001  = st.slider(' NRMVotes_2001',min_value=1, max_value=1000000, value=1, step=1)  
-#     OV_2001  = st.slider('OV_2001',min_value=1, max_value=100, value=1000000, step=1)
-#     IV_2006 = st.slider('IV_2006',min_value=1, max_value=100, value=1000000, step=1)
-#     NRMVotes_2006 = st.slider('NRMVotes_2006',min_value=1, max_value=1000000, value=1, step=1)
     IV_2011 = st.slider('2011 Invalid Votes',min_value=1, max_value=100, value=1000000, step=1)
     NRM_Score_2011  =st.slider('2011 NRM Score',min_value=0.0, max_value=1.0, value=0.01, step=0.01)
     NRMVotes_2016 = st.slider('2016 NRM Votes',min_value=1, max_value=1000000, value=1, step=1) 
@@ -113,6 +87,6 @@ def main():
         result = prediction(IV_2011, NRM_Score_2011, NRMVotes_2016, OppVotes_2016)
         st.success(f'2021 NRM Score for this District is: {100*(np.round(result,4))}%')
         
-if __name__=='__main__': 
+if __name__=="__main__": 
     main()
     
